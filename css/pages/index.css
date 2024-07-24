@@ -1,0 +1,59 @@
+#banner{
+    position: relative;
+    padding: 0;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    & h1{
+        font-size: var(--fs-900);
+        line-height: 100%;
+        text-align: center;
+    }
+
+    & img{
+        height: calc(100vh);
+        width: 5%;
+        object-fit: cover;
+
+        -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+
+        
+        &#banner-down-arrow{
+            position: absolute;
+            width: auto;
+            height: 45px;
+            inset: 0;
+            margin: auto auto 1em auto;
+
+            transition: var(--ts-def);
+
+            -webkit-mask-image: none;
+
+            &:hover{
+                cursor: pointer;
+                transform: translateY(5px);
+            }
+        }
+    }
+}
+
+.introduction{
+    padding-block: 10em;
+}
+
+
+.newphase{
+    text-transform: uppercase;
+    
+    &.eu{
+        background: url(/img/eu.svg) center no-repeat #003399;
+        color: var(--white);
+    }
+    &.hu{
+        background: url(/img/hu.svg) ;
+        background-size: contain;
+        background-repeat: repeat-x;
+        color: var(--black);
+    }
+}

@@ -1,0 +1,133 @@
+/* artcile.chart */
+.chart{
+    padding: 1.5em 2.5em 1em 2.5em;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    
+    background: var(--feher);
+    color: var(--black);
+
+    &.multiple{
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        gap: 10%;
+    }
+    &.nobg{
+        background: none;
+        color: inherit;
+    }
+
+    & h3{
+        text-align: left;
+    }
+
+
+    & .source{
+        margin-top: 1.5em;
+
+        color: var(--gray);
+        text-align: left;
+        font-size: var(--fs-200);
+    }
+}
+.chart.datawrapper{
+    & iframe{
+        width: 100%;
+        /* padding-top: 2em; */
+        /* padding: 10em; */
+        
+        align-self: center;
+    }
+}
+
+
+
+/* table itself */
+.charts-css{
+
+    &.bar{
+
+
+        &.stacked{
+            --color-1: rgba(44, 160, 143, .7);
+            --color-2: rgba(44, 160, 143, .5);
+            --color-3: rgba(44, 160, 143, .8);
+            --color-4: rgba(44, 160, 143, .6);
+            --color-5: rgba(44, 160, 143, .9);
+            --color-6: rgba(44, 160, 143, .7);
+            --color-7: rgba(44, 160, 143, .5);
+            --color-8: rgba(44, 160, 143, .8);
+            --color-9: rgba(44, 160, 143, .6);
+            --color-10: rgba(44, 160, 143, .9);
+        }
+
+
+        & th{
+            text-align: left;
+        }
+    }
+
+    &.column{
+
+    }
+
+    &.line{
+
+    }
+
+
+
+    &.show-heading caption{
+        margin-bottom: .8em;
+
+        display: flex;
+        flex-direction: column;
+
+        font-size: var(--fs-600);
+        font-weight: bold;
+        text-align: left;
+
+
+        & span{
+            font-size: var(--fs-400);
+            font-weight: 500;
+        }
+    }
+
+    & td{
+        transition: var(--ts-fast);
+
+
+        &:last-child :last-child{
+            transform: translateX(120%);
+            overflow-wrap: normal;
+            font-weight: bold;
+        }
+    }
+
+    & .tooltip{
+        background: var(--black);
+        color: var(--white);
+        text-align: center;
+
+        border-radius: 0;
+        user-select: none;
+
+        &::after{
+            display: none;
+        }
+
+
+        em{
+            font-size: .7rem;
+        }
+    }
+}
+
+
+.nohover:hover{
+    user-select: none;
+}

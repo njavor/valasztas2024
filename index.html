@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Választás 2024</title>
+    <link rel="shortcut icon" href="/img/fav.ico" type="image/x-icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/-variables.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/section.css">
+    
+    <link rel="stylesheet" href="/css/pages/index.css">
+    
+    <!-- js -->
+     <script src="/js/headerIn.js" defer></script>
+     <script src="/js/progressBar.js" defer></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- etc -->
+    <link rel="stylesheet" href="/css/etc/charts.min.css">
+    <link rel="stylesheet" href="/css/etc/charts-changes.css">
+    <link rel="stylesheet" href="/css/etc/charts-specifics.css">
+</head>
+<body>
+    <header class="noBg">
+        <div class="progress">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="banner">
+            <img src="/img/eu.svg" alt="">
+            
+            <div>
+                <h5 style="opacity: .3; color: red;">FIGYELEM: Munkálatok alatt!</h5>
+                <h5 style="margin-bottom: 2em; opacity: .3; color: red;">FIGYELEM: Az oldal jelenleg nem optimalizált mobil eszközökre!</h5>
+                <h1 style="margin-bottom: .6em;">Választás<br>2024</h1>
+            </div>
+            <img id="banner-down-arrow" src="/img/down-arrow.png" alt="">
+
+            <img src="/img/hu.svg" alt="">
+        </section>
+
+
+        <section id="introduction" class="introduction">
+            <h2 class="title">egy rendkívüli választás</h2>
+            <p>
+                A 2024-es választások több szempontból is meglepőnek bizonyultak. A "régi ellenzék" látványosan megbukott, ugyanakkor a FIDESZ is gyengülni látszik. A frissen létrejött Magyar Péter Párt... akarom mondani TISZA pedig mint főnixmadár kezdett szárnyalásába a parlamenti ellenzék (egyébként normálisabb felének) hullájából felszállva.
+            </p>
+            <p>
+                Sok elemzése született már mind az európai parlamenti, mind az önkormányzati eredményeknek, amiket nálam jelentősen tájékozottabb emberek készítettek, így ilyenre nem vetemednék. Ugyanakkor diagrammok és térképek segíthetnek kontextusba helyezni ezeket az adatokat, láthatjuk, hogy hogyan is állunk.
+            </p>
+            <p>Most erre vállalkozom.</p>
+        </section>
+        <section class="introduction" style="padding-bottom: 20em;">
+            <h2>jöjjön hát egy nagy adag igen (és kevésbé) izgalmas adata a 2024-es választásoknak</h2>
+        </section>
+
+        <section id="overall">
+            <article id="reszvetel" class="chart">
+                <table id="resz" class="charts-css bar multiple stacked  show-heading show-labels show-primary-axis show-6-secondary-axes  reverse-data data-outside data-spacing-15">
+                    <caption>
+                        Részvételi adatok önkormányzati és EP választásokon (2024-2004)
+                        <span>*2019-et megelőzően nem érhető el 17:00 és 18:30-as részvételi adat az önkormányzati választásokon</span>
+                    </caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">2004 <br> EP</th>
+                            <td style="--size: calc(0.90 / 60)" class="ora7">
+                                <span class="tooltip"><b>7:00</b> &ensp;|&ensp; 0,90%</span>
+                            </td>
+                            <td style="--size: calc(4.55 / 60)" class="ora9">
+                                <span class="tooltip"><b>9:00</b> &ensp;|&ensp; 5,45% <br> <em>+ 4,55%</em></span>
+                            </td>
+                            <td style="--size: calc(8.30 / 60)" class="ora11">
+                                <span class="tooltip"><b>11:00</b> &ensp;|&ensp; 13,75% <br> <em>+ 8,30%</em></span>
+                            </td>
+                            <td style="--size: calc(7.05 / 60)" class="ora13">
+                                <span class="tooltip"><b>13:00</b> &ensp;|&ensp; 20,8% <br> <em>+ 7.05%</em></span>
+                            </td>
+                            <td style="--size: calc(4.70 / 60)" class="ora15">
+                                <span class="tooltip"><b>15:00</b> &ensp;|&ensp; 25,5% <br> <em>+ 4,70%</em></span>
+                            </td>
+                            <td style="--size: calc(6.75 / 60)" class="ora17">
+                                <span class="tooltip"><b>17:00</b> &ensp;|&ensp; 32,25% <br> <em>+ 6,75%</em></span>
+                            </td>
+                            <td style="--size: calc(4.64 / 60)" class="ora1830">
+                                <span class="tooltip"><b>18:30</b> &ensp;|&ensp; 36,89% <br> <em>+ 4,64%</em></span>
+                            </td>
+                            <td style="--size: calc(1.61 / 60)" class="ora19">
+                                <span class="tooltip"><b>19:00</b>&ensp;38,50% <br> <em>+ 1,61%</em></span>
+                                <span class="nohover">38,50%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2006 <br> ÖNK*</th>
+                            <td style="--size: calc(1.12 / 60)" class="ora7">
+                                <span class="tooltip"><b>7:00</b> &ensp;|&ensp; 1,12%</span>
+                            </td>
+                            <td style="--size: calc(6.58 / 60)" class="ora9">
+                                <span class="tooltip"><b>9:00</b> &ensp;|&ensp; 7,70% <br> <em>+ 6,58%</em></span>
+                            </td>
+                            <td style="--size: calc(10.83 / 60)" class="ora11">
+                            <span class="tooltip"><b>11:00</b> &ensp;|&ensp; 18,53% <br> <em>+ 10,83%</em></span>
+                            </td>
+                            <td style="--size: calc(8.45 / 60)" class="ora13">
+                                <span class="tooltip"><b>13:00</b> &ensp;|&ensp; 26,98% <br> <em>+ 8,45%</em></span>
+                            </td>
+                            <td style="--size: calc(7.79 / 60)" class="ora15">
+                                <span class="tooltip"><b>15:00</b> &ensp;|&ensp; 34,77% <br> <em>+ 7,79%</em></span>
+                            </td>
+                            <td style="--size: calc(18.35 / 60)" class="ora19">
+                                <span class="tooltip"><b>19:00</b> &ensp;|&ensp; 53,12% <br> <em>+ 18,35%</em></span>
+                                <span class="nohover">53,12%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2009 <br> EP</th>
+                            <td style="--size: calc(1.07 / 60)" class="ora7">
+                                <span class="tooltip"><b>7:00</b> &ensp;|&ensp; 1,07%</span>
+                            </td>
+                            <td style="--size: calc(4.96 / 60)" class="ora9">
+                                <span class="tooltip"><b>9:00</b> &ensp;|&ensp; 6,03% <br> <em>+ 4,96%</em></span>
+                            </td>
+                            <td style="--size: calc(7.74 / 60)" class="ora11">
+                                <span class="tooltip"><b>11:00</b> &ensp;|&ensp; 13,77% <br> <em>+ 7,74%</em></span>
+                            </td>
+                            <td style="--size: calc(5.63 / 60)" class="ora13">
+                                <span class="tooltip"><b>13:00</b> &ensp;|&ensp; 19,40% <br> <em>+ 5,63%</em></span>
+                            </td>
+                            <td style="--size: calc(4.69 / 60)" class="ora15">
+                                <span class="tooltip"><b>15:00</b> &ensp;|&ensp; 24,09% <br> <em>+ 4,69%</em></span>
+                            </td>
+                            <td style="--size: calc(6.16 / 60)" class="ora17">
+                                <span class="tooltip"><b>17:00</b> &ensp;|&ensp; 30,25% <br> <em>+ 6,16%</em></span>
+                            </td>
+                            <td style="--size: calc(4.65 / 60)" class="ora1830">
+                                <span class="tooltip"><b>18:30</b> &ensp;|&ensp; 34,90% <br> <em>+ 4,65%</em></span>
+                            </td>
+                            <td style="--size: calc(1.41 / 60)" class="ora19">
+                                <span class="tooltip"><b>19:00</b> &ensp;|&ensp; 36,31% <br> <em>+ 1,41%</em></span>
+                                <span class="nohover">36,31%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2010 <br> ÖNK*</th>
+                            <td style="--size: calc(0.99 / 60)" class="ora7">
+                                <span class="tooltip"><b>7:00</b> &ensp;|&ensp; 0,99%</span>
+                            </td>
+                            <td style="--size: calc(5.61 / 60)" class="ora9">
+                                <span class="tooltip"><b>9:00</b> &ensp;|&ensp; 6,60% <br> <em>+ 5,61%</em></span>
+                            </td>
+                            <td style="--size: calc(9.71 / 60)" class="ora11">
+                                <span class="tooltip"><b>11:00</b> &ensp;|&ensp; 16,31% <br> <em>+ 9,71%</em></span>
+                            </td>
+                            <td style="--size: calc(7.37 / 60)" class="ora13">
+                                <span class="tooltip"><b>13:00</b> &ensp;|&ensp; 23,68% <br> <em>+ 7,37%</em></span>
+                            </td>
+                            <td style="--size: calc(7.79 / 60)" class="ora15">
+                                <span class="tooltip"><b>15:00</b> &ensp;|&ensp; 31,47% <br> <em>+ 7,79%</em></span>
+                            </td>
+                            <td style="--size: calc(15.17 / 60)" class="ora19">
+                                <span class="tooltip"><b>19:00</b> &ensp;|&ensp; 46,64% <br> <em>+ 15,17%</em></span>
+                                <span class="nohover">46,64%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2014 <br> EP</th>
+                            <td style="--size: calc(0.96 / 60)" class="ora7">
+                                <span class="tooltip"><b>7:00</b> &ensp;|&ensp; 0,96%</span>
+                            </td>
+                            <td style="--size: calc(4.29 / 60)" class="ora9">
+                                <span class="tooltip"><b>9:00</b> &ensp;|&ensp; 5,25% <br> <em>+ 4,29%</em></span>
+                            </td>
+                            <td style="--size: calc(6.28 / 60)" class="ora11">
+                                <span class="tooltip"><b>11:00</b> &ensp;|&ensp; 11,53% <br> <em>+ 6,28%</em></span>
+                            </td>
+                            <td style="--size: calc(4.37 / 60)" class="ora13">
+                                <span class="tooltip"><b>13:00</b> &ensp;|&ensp; 15,90% <br> <em>+ 4,37%</em></span>
+                            </td>
+                            <td style="--size: calc(3.63 / 60)" class="ora15">
+                                <span class="tooltip"><b>15:00</b> &ensp;|&ensp; 19,53% <br> <em>+ 3,63%</em></span>
+                            </td>
+                            <td style="--size: calc(4.53 / 60)" class="ora17">
+                                <span class="tooltip"><b>17:00</b> &ensp;|&ensp; 24,06% <br> <em>+ 4,53%</em></span>
+                            </td>
+                            <td style="--size: calc(3.58 / 60)" class="ora1830">
+                                <span class="tooltip"><b>18:30</b> &ensp;|&ensp; 27,64% <br> <em>+ 3,58%</em></span>
+                            </td>
+                            <td style="--size: calc(1.28 / 60)" class="ora19">
+                                <span class="tooltip"><b>19:00</b> &ensp;|&ensp; 28,92% <br> <em>+ 1,28%</em></span>
+                                <span class="nohover">28,92%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2014 <br> ÖNK*</th>
+                            <td style="--size: calc(1.06 / 60)" class="ora7">
+                                <span class="tooltip"><b>7:00</b> &ensp;|&ensp; 1,06%</span>
+                            </td>
+                            <td style="--size: calc(5.91 / 60)" class="ora9">
+                                <span class="tooltip"><b>9:00</b> &ensp;|&ensp; 6,97% <br> <em>+ 5,91%</em></span>
+                            </td>
+                            <td style="--size: calc(9.53 / 60)" class="ora11">
+                                <span class="tooltip"><b>11:00</b> &ensp;|&ensp; 16,50% <br> <em>+ 9,53%</em></span>
+                            </td>
+                            <td style="--size: calc(7.03 / 60)" class="ora13">
+                                <span class="tooltip"><b>13:00</b> &ensp;|&ensp; 23,53% <br> <em>+ 7,03%</em></span>
+                            </td>
+                            <td style="--size: calc(6.58 / 60)" class="ora15">
+                                <span class="tooltip"><b>15:00</b> &ensp;|&ensp; 30,11% <br> <em>+ 6,58%</em></span>
+                            </td>
+                            <td style="--size: calc(14.19 / 60)" class="ora19">
+                                <span class="tooltip"><b>19:00</b> &ensp;|&ensp; 44,30% <br> <em>+ 14,19%</em></span>
+                                <span class="nohover">44,30%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2019 <br> EP</th>
+                            <td style="--size: calc(1.48 / 60)" class="ora7">
+                                <span class="tooltip"><b>7:00</b> &ensp;|&ensp; 1,48%</span>
+                            </td>
+                            <td style="--size: calc(6.3 / 60)" class="ora9">
+                                <span class="tooltip"><b>9:00</b> &ensp;|&ensp; 7,78% <br> <em>+ 6,30%</em></span>
+                            </td>
+                            <td style="--size: calc(9.38 / 60)" class="ora11">
+                                <span class="tooltip"><b>11:00</b> &ensp;|&ensp; 17,16% <br> <em>+ 9,38%</em></span>
+                            </td>
+                            <td style="--size: calc(6.85 / 60)" class="ora13">
+                                <span class="tooltip"><b>13:00</b> &ensp;|&ensp; 24,01% <br> <em>+ 6,85%</em></span>
+                            </td>
+                            <td style="--size: calc(6.51 / 60)" class="ora15">
+                                <span class="tooltip"><b>15:00</b> &ensp;|&ensp; 30,52% <br> <em>+ 6,51%</em></span>
+                            </td>
+                            <td style="--size: calc(6.54 / 60)" class="ora17">
+                                <span class="tooltip"><b>17:00</b> &ensp;|&ensp; 37,06% <br> <em>+ 6,54%</em></span>
+                            </td>
+                            <td style="--size: calc(4.68 / 60)" class="ora1830">
+                                <span class="tooltip"><b>18:30</b> &ensp;|&ensp; 41,74% <br> <em>+ 4,68%</em></span>
+                            </td>
+                            <td style="--size: calc(1.84 / 60)" class="ora19">
+                                <span class="tooltip"><b>19:00</b> &ensp;|&ensp; 43,58% <br> <em>+ 1,84%</em></span>
+                                <span class="nohover">43,58%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2019 <br> ÖNK</th>
+                            <td style="--size: calc(1.12 / 60)" class="ora7">
+                                <span class="tooltip"><b>7:00</b> &ensp;|&ensp; 1,12%</span>
+                            </td>
+                            <td style="--size: calc(6.08 / 60)" class="ora9">
+                                <span class="tooltip"><b>9:00</b> &ensp;|&ensp; 7,20% <br> <em>+ 6,08%</em></span>
+                            </td>
+                            <td style="--size: calc(11.05 / 60)" class="ora11">
+                                <span class="tooltip"><b>11:00</b> &ensp;|&ensp; 18,25% <br> <em>+ 11,05%</em></span>
+                            </td>
+                            <td style="--size: calc(8.35 / 60)" class="ora13">
+                                <span class="tooltip"><b>13:00</b> &ensp;|&ensp; 26,60% <br> <em>+ 8,35%</em></span>
+                            </td>
+                            <td style="--size: calc(8.09 / 60)" class="ora15">
+                                <span class="tooltip"><b>15:00</b> &ensp;|&ensp; 34,69% <br> <em>+ 8,09%</em></span>
+                            </td>
+                            <td style="--size: calc(8 / 60)" class="ora17">
+                                <span class="tooltip"><b>17:00</b> &ensp;|&ensp; 42,69% <br> <em>+ 8,00%</em></span>
+                            </td>
+                            <td style="--size: calc(4.51 / 60)" class="ora1830">
+                                <span class="tooltip"><b>18:30</b> &ensp;|&ensp; 47,20% <br> <em>+ 4,51%</em></span>
+                            </td>
+                            <td style="--size: calc(1.38 / 60)" class="ora19">
+                                <span class="tooltip"><b>19:00</b> &ensp;|&ensp; 48,58% <br> <em>+ 1,38%</em></span>
+                                <span class="nohover">48,58%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2024 <br> E&Ö</th>
+                            <td style="--size: calc(1.88 / 60)" class="ora7">
+                                <span class="tooltip"><b>7:00</b> &ensp;|&ensp; 1,88%</span>
+                            </td>
+                            <td style="--size: calc(8.1 / 60)" class="ora9">
+                                <span class="tooltip"><b>9:00</b> &ensp;|&ensp; 9,98% <br> <em>+ 8,10%</em></span>
+                            </td>
+                            <td style="--size: calc(12.91 / 60)" class="ora11">
+                                <span class="tooltip"><b>11:00</b> &ensp;|&ensp; 22,89% <br> <em>+ 12,91%</em></span>
+                            </td>
+                            <td style="--size: calc(10.25 / 60)" class="ora13">
+                                <span class="tooltip"><b>13:00</b> &ensp;|&ensp; 33,14% <br> <em>+ 10,25%</em></span>
+                            </td>
+                            <td style="--size: calc(8.9 / 60)" class="ora15">
+                                <span class="tooltip"><b>15:00</b> &ensp;|&ensp; 42,04% <br> <em>+ 8,90%</em></span>
+                            </td>
+                            <td style="--size: calc(8.65 / 60)" class="ora17">
+                                <span class="tooltip"><b>17:00</b> &ensp;|&ensp; 50,69% <br> <em>+ 8,65%</em></span>
+                            </td>
+                            <td style="--size: calc(5.4 / 60)" class="ora1830">
+                                <span class="tooltip"><b>18:30</b> &ensp;|&ensp; 56,09% <br> <em>+ 5,40%</em></span>
+                            </td>
+                            <td style="--size: calc(2.01 / 60)" class="ora19">
+                                <span class="tooltip"><b>19:00</b> &ensp;|&ensp; 58,10% <br> <em>+ 2,01%</em></span>
+                                <span class="nohover">58,10% <small>(59,46%)</small></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <span class="source">
+                    <span>Diagram: Jávor Nikolett</span>                    
+                    &ensp;•&ensp;
+                    <span>Forrás: <a href="" target="_blank">Nemzeti Választási Iroda</a></span>
+                    &ensp;•&ensp;
+                    <a href="/data/reszveteli_adatok_20004-2024.xlsx" download>Adatok letöltése</a>
+                    &ensp;•&ensp;
+                    <a href="" download>Kép letöltése</a>
+                    &ensp;•&ensp;
+                    <span>A készítéshez használt framework: <a href="https://chartscss.org" target="_blank">Charts.css</a></span>
+                </span>
+            </article>
+            <!-- <article id="reszvetel-terulet" class="chart multiple nobg">
+                <iframe title="EP-választás 2024 - regionális részvételi adatok" aria-label="Map" id="datawrapper-chart-AUHf4" src="https://datawrapper.dwcdn.net/AUHf4/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="592" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                <iframe title="EP-választás 2024 - regionális részvételi adatok" aria-label="Map" id="datawrapper-chart-AUHf4" src="https://datawrapper.dwcdn.net/AUHf4/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="592" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+            </article> -->
+        </section>
+
+
+        <section class="newphase eu">
+            <h1>európai parlamenti választások</h1>
+            <button class="openex" style="display: none;">mi is ez?</button>
+        </section>
+        <section class="introduction color-eu">
+            <h2>Kezdjük az elején... mi a fene az az Európai Parlament?</h2>
+            <button class="closeex">tudok mindent, nem kell a leírás</button>
+        </section>
+        <section class="color-eu" style="position: relative;">
+            <article style="text-align: left; align-self: flex-start; width: 60%;">
+                <h3 class="title">Az EP</h3>
+                <div>
+                    <img style="position:absolute; bottom: 0; right: 0; height: 70%; width: 40vw; object-fit: cover; object-position: left;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg/1920px-European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg" alt="">
+                    <label for="img" style="position: absolute; bottom: 0; right: 40%; padding: .3em .4em .3em .7em;  font-size: var(--fs-200); opacity: .9;">kép forrása: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg/1920px-European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg">Wikipédia</a></label>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+            </article>
+        </section>
+        <section class="color-eu" style="position: relative;">
+            <article style="text-align: left; align-self: flex-end; width: 70%;">
+                <h3 class="title" style="margin-top: 4em;">Miről dönt a szavazatunk?</h3>
+                <div>
+                    <img style="position:absolute; top: 6em; left: 0; height: 70%; width: 30vw; object-fit: cover; object-position: right;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg/1920px-European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg" alt="">
+                    <label for="img" style="position: absolute; top: calc(9.5em + 70%); left: 0; padding: .3em .4em .3em .7em;  font-size: var(--fs-200); opacity: .9;">kép forrása: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg/1920px-European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg">Wikipédia</a></label>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
+            </article>
+        </section>
+
+        <section id="eu1">
+            <article id="epszavazatok2024" class="chart">
+                <table class="charts-css column  show-heading show-labels  show-primary-axis show-5-secondary-axes  data-outside data-spacing-15">
+                    <caption>2024-es EP-választások szavazatmegoszlása</caption>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">FIDESZ-KDNP</th>
+                            <td style="--size: calc(2048211 / 2500000); background: var(--fidesz)">
+                                <span class="tooltip">2 048 211</span>
+                                <span class="data">44,82%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">TISZA</th>
+                            <td style="--size: calc(1352699 / 2500000); background: var(--tisza)">
+                                <span class="tooltip">1 352 699</span>
+                                <span class="data">29,60%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">MSZP-DK-P</th>
+                            <td style="--size: calc(367162 / 2500000); background: var(--dk)">
+                                <span class="tooltip">367 162</span>
+                                <span class="data">8,03%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mi Hazánk</th>
+                            <td style="--size: calc(306404 / 2500000); background: var(--mihazank)">
+                                <span class="tooltip">306 404</span>
+                                <span class="data">6,71%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Momentum</th>
+                            <td style="--size: calc(169082 / 2500000); background: var(--momentum)">
+                                <span class="tooltip">169 082</span>
+                                <span class="data">3,70%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">MKKP</th>
+                            <td style="--size: calc(163960 / 2500000); background: var(--mkkp)">
+                                <span class="tooltip">163 960</span>
+                                <span class="data">3,59%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Jobbik</th>
+                            <td style="--size: calc(45404 / 2500000); background: var(--jobbik)">
+                                <span class="tooltip">45 404</span>
+                                <span class="data">0,99%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">LMP</th>
+                            <td style="--size: calc(39646 / 2500000); background: var(--lmp)">
+                                <span class="tooltip">39 646</span>
+                                <span class="data">0,87%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2RK Párt</th>
+                            <td style="--size: calc(30961 / 2500000); background: var(--kettork)">
+                                <span class="tooltip">30 961</span>
+                                <span class="data">0,68%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">MMN</th>
+                            <td style="--size: calc(29285 / 2500000); background: var(--mmn)">
+                                <span class="tooltip">29 285</span>
+                                <span class="data">0,64%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">MEMO</th>
+                            <td style="--size: calc(16806 / 2500000); background: var(--memo)">
+                                <span class="tooltip">16 806</span>
+                                <span class="data">0,37%</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="charts-css line show-heading show-labels data-end" style="--color: rgb(111, 111, 111); pointer-events: none;">
+                    <caption style="opacity: 0;">2024-es EP-választások szavazatmegoszlása</caption>
+                    <tbody>
+                        <tr>
+                            <td style="--size: calc((4569620 * 0.05) / 2500000);">bejutási küszöb: &ensp; 228 481</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <span class="source">
+                    <span>Diagram: Jávor Nikolett</span>                    
+                    &ensp;•&ensp;
+                    <span>Forrás: <a href="" target="_blank">Nemzeti Választási Iroda</a></span>
+                    &ensp;•&ensp;
+                    <a href="/data/reszveteli_adatok_20004-2024.xlsx" download>Adatok letöltése</a>
+                    &ensp;•&ensp;
+                    <a href="" download>Kép letöltése</a>
+                    &ensp;•&ensp;
+                    <span>A készítéshez használt framework: <a href="https://chartscss.org" target="_blank">Charts.css</a></span>
+                </span>
+            </article>
+            
+            <article id="epszavazatok2019" class="chart">
+                <table class="charts-css column  show-heading show-labels  show-primary-axis show-4-secondary-axes  data-outside data-spacing-15">
+                    <caption>
+                        2019-es EP-választások szavazatmegoszlása
+                        
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">party</th>
+                            <th scope="col">vote</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">FIDESZ-KDNP</th>
+                            <td style="--size: calc(1824220 / 2000000); background: var(--fidesz)">
+                                <span class="tooltip">1 824 220</span>
+                                <span class="data">52,56%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">DK</th>
+                            <td style="--size: calc(557081 / 2000000); background: var(--dk)">
+                                <span class="tooltip">557 081</span>
+                                <span class="data">16,05%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Momentum</th>
+                            <td style="--size: calc(344512 / 2000000); background: var(--momentum)">
+                                <span class="tooltip">344 512</span>
+                                <span class="data">9,93%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">MSZP-P</th>
+                            <td style="--size: calc(229551 / 2000000); background: var(--mszp)">
+                                <span class="tooltip">229 551</span>
+                                <span class="data">6,61%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Jobbik</th>
+                            <td style="--size: calc(220184 / 2000000); background: var(--jobbik)">
+                                <span class="tooltip">220 184</span>
+                                <span class="data">6,34%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mi Hazánk</th>
+                            <td style="--size: calc(114156 / 2000000); background: var(--mihazank)">
+                                <span class="tooltip">114 156</span>
+                                <span class="data">3,29%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">MKKP</th>
+                            <td style="--size: calc(90912 / 2000000); background: var(--mkkp)">
+                                <span class="tooltip">90 912</span>
+                                <span class="data">2,62%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">LMP</th>
+                            <td style="--size: calc(75498 / 2000000); background: var(--lmp)">
+                                <span class="tooltip">75 498</span>
+                                <span class="data">2,18%</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Munkáspárt</th>
+                            <td style="--size: calc(14452 / 2000000); background: var(--munkaspart)">
+                                <span class="tooltip">14 452</span>
+                                <span class="data">0,42%</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="charts-css line show-heading show-labels data-end" style="--color: rgb(111, 111, 111); pointer-events: none;">
+                    <caption style="opacity: 0;">2019-es EP-választások szavazatmegoszlása</caption>
+                    <tbody>
+                        <tr>
+                            <td style="--size: calc((3470566 * 0.05) / 2000000);">bejutási küszöb: &ensp; 173 528</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <span class="source">
+                    <span>Diagram: Jávor Nikolett</span>                    
+                    &ensp;•&ensp;
+                    <span>Forrás: <a href="" target="_blank">Nemzeti Választási Iroda</a></span>
+                    &ensp;•&ensp;
+                    <a href="/data/reszveteli_adatok_20004-2024.xlsx" download>Adatok letöltése</a>
+                    &ensp;•&ensp;
+                    <a href="" download>Kép letöltése</a>
+                    &ensp;•&ensp;
+                    <span>A készítéshez használt framework: <a href="https://chartscss.org" target="_blank">Charts.css</a></span>
+                </span>
+            </article>
+        </section>
+        <section id="eu2" class="row">
+            <article id="epmandatumok2019" class="chart" style="position: relative;">
+                <table class="charts-css pie  show-heading show-labels hide-data  data-center data-spacing-15">
+                    <caption>2019-es EP-választások mandátummegoszlása</caption>
+                    <tbody>
+                        <tr><td style="--start: calc(0 / 21); --end: calc(13 / 21);  --c: var(--fidesz);"><span class="data">11</span></td></tr>
+                        <tr><td style="--start: calc(13 / 21); --end: calc(17 / 21);  --c: var(--dk);"><span class="data">4</span></td></tr>
+                        <tr><td style="--start: calc(17 / 21); --end: calc(19 / 21);  --c: var(--momentum);"><span class="data">2</span></td></tr>
+                        <tr><td style="--start: calc(19 / 21); --end: calc(20 / 21);  --c: var(--mszp);"><span class="data">1</span></td></tr>
+                        <tr><td style="--start: calc(20 / 21); --end: calc(21 / 21);  --c: var(--jobbik);"><span class="data">1</span></td></tr>
+                    </tbody>
+                </table>
+                <ul class="charts-css legend legend-square" style="position: absolute; top: 2%; right: 4%; height: fit-content; width: fit-content;   text-wrap: nowrap; border: none;">
+                    <li style="--color-1: var(--fidesz);"> FIDESZ-KDNP </li>
+                    <li style="--color-2: var(--dk)"> DK </li>
+                    <li style="--color-3: var(--momentum)"> Momentum </li>
+                    <li style="--color-4: var(--mszp)"> MSZP-P </li>
+                    <li style="--color-5: var(--jobbik)"> Jobbik </li>
+                </ul>
+            </article>
+            <article id="epmandatumok2024" class="chart" style="position: relative;">
+                <table class="charts-css pie  show-heading show-labels hide-data  data-center data-spacing-15">
+                    <caption>2024-es EP-választások mandátummegoszlása</caption>
+                    <tbody>
+                        <tr>
+                            <tr><td style="--start: calc(0 / 21); --end: calc(11 / 21);  --c: var(--fidesz);"><span class="data">11</span></td></tr>
+                            <tr><td style="--start: calc(11 / 21); --end: calc(18 / 21);  --c: var(--tisza);"><span class="data">7</span></td></tr>
+                            <tr><td style="--start: calc(18 / 21); --end: calc(20 / 21);  --c: var(--dk);"><span class="data">2</span></td></tr>
+                            <tr><td style="--start: calc(20 / 21); --end: calc(21 / 21);  --c: var(--mihazank);"><span class="data">1</span></td></tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="charts-css legend legend-square" style="position: absolute; top: 2%; right: 4%; height: fit-content; width: fit-content;   text-wrap: nowrap; border: none;">
+                    <li style="--color-1: var(--fidesz);"> FIDESZ-KDNP </li>
+                    <li style="--color-2: var(--tisza)"> TISZA </li>
+                    <li style="--color-3: var(--dk)"> DK-MSZP-P </li>
+                    <li style="--color-4: var(--mihazank)"> Mi Hazánk </li>
+                </ul>
+            </article>
+        </section>
+        <section id="eu3">
+            <article id="epfrakciok2024" class="chart datawrapper" style="gap: 2em;">
+                <h3>2024-es EP-választások eredménye pártcsalád szerint</h3>
+                <iframe title="2024-es EP-választások eredménye pártcsalád szerint" aria-label="Election Donut" id="datawrapper-chart-hRc08" src="https://datawrapper.dwcdn.net/hRc08/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="531" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                </script>
+            </article>
+        </section>
+
+
+        <section class="newphase hu">
+            <h1>helyi önkormányzati választások</h1>
+        </section>
+        <section class="introduction color-hu">
+            <h2>dummy text</h2>
+        </section>
+
+        <section id="hu1" class="row">
+            <div style="display: grid; grid-template-rows: 1fr 1fr; gap: 2em;">
+                <article id="onkormanyzatFopolgarmester" class="chart">
+                    <table class="charts-css column  show-heading show-labels show-primary-axis show-4-secondary-axes  data-outside data-spacing-15">
+                        <caption>2024-es főpolgármester választás eredménye</caption>
+                        <tbody>
+                            <tr>
+                                <th>Karácsony Gergely <br> <small>P-DK-MSZP</small></th>
+                                <td style="--size: calc(371538 / 400000); background: var(--parbeszed);">
+                                    <span class="tooltip">371 538</span>
+                                    <span class="data">47,53%</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Vitézy Dávid <br> <small>VDB-LMP</small></th>
+                                <td style="--size: calc(371245 / 400000); background: var(--vitezy);">
+                                    <span class="tooltip">371 245</span>
+                                    <span class="data">47,49%</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Dr. Grundtner András <br> <small>Mi Hazánk</small></th>
+                                <td style="--size: calc(38984/400000); background: var(--mihazank);">
+                                    <span class="tooltip">38 984</span>
+                                    <span class="data">4,99%</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <span class="source">
+                        <span>Diagram: Jávor Nikolett</span>                    
+                        &ensp;•&ensp;
+                        <span>Forrás: <a href="https://vtr.valasztas.hu/onk2024/valasztopolgaroknak/varmegyek-telepulesek/varmegyek/01?tab=results&filter=lordmayor" target="_blank">Nemzeti Választási Iroda</a></span>
+                        &ensp;•&ensp;
+                        <a href="/data/" download>Adatok letöltése</a>
+                        &ensp;•&ensp;
+                        <a href="" download>Kép letöltése</a>
+                        &ensp;•&ensp;
+                        <span>A készítéshez használt framework: <a href="https://chartscss.org" target="_blank">Charts.css</a></span>
+                    </span>
+                </article>
+                <article id="onkormanyzatFopolgarmesterKulonbseg" class="chart">
+                    <table class="charts-css column  show-heading show-labels  show-primary-axis show-3-secondary-axes  data-outside data-spacing-15">
+                        <caption>Szavazatkülönbség a győztes (főpolgármester) és a második helyezett között (2002-2024)</caption>
+                        <tbody>
+                            <tr>
+                                <th>2002</th>
+                                <td style="--size: calc(80971 / 150000); background: var(--szdsz);">
+                                    <span class="tooltip" style="text-align: left;">1. Dr. Demszky Gábor <br>2. Dr. Schmitt Pál</span>
+                                    <span class="data">80 971</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>2006</th>
+                                <td style="--size: calc(12877 / 150000); background: var(--szdsz);">
+                                    <span class="tooltip" style="text-align: left;">1. Dr. Demszky Gábor <br>2. Tarlós István</span>
+                                    <span class="data">12 877</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>2010</th>
+                                <td style="--size: calc(144125 / 150000); background: var(--fidesz);">
+                                    <span class="tooltip" style="text-align: left;">1. Tarlós István <br>2. Horváth Csaba</span>
+                                    <span class="data">144 125</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>2014</th>
+                                <td style="--size: calc(77125 / 150000); background: var(--fidesz);">
+                                    <span class="tooltip" style="text-align: left;">1. Tarlós István <br>2. Dr. Bokros Lajos András</span>
+                                    <span class="data">77 125</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>2019</th>
+                                <td style="--size: calc(46985 / 150000); background: var(--parbeszed);">
+                                    <span class="tooltip" style="text-align: left;">1. Karácsony Gergely <br>2. Tarlós István</span>
+                                    <span class="data">46 985</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>2024</th>
+                                <td style="--size: calc(293 / 150000); background: var(--parbeszed);">
+                                    <span class="tooltip" style="text-align: left;">1. Karácsony Gergely <br>2. Vitézy Dávid</span>
+                                    <span class="data">293</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+
+            <article id="onkormanyzatBp" class="chart datawrapper" style="height: -webkit-fill-available;">
+                <h3>2024-es önkormányzati választások győztes polgármesterei jelölőszervezettel (Budapest)</h3>
+                <iframe title="2024-es önkormányzati választások győztes polgármesterei jelölőszervezettel (Budapest)" aria-label="Map" id="datawrapper-chart-SoBZA" src="https://datawrapper.dwcdn.net/SoBZA/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="616" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                </script>
+            </article>
+        </section>
+        <section id="hu2">
+            <article id="igen" class="chart datawrapper">
+                <h3>2024-es önkormányzati választások győztes polgármesterei jelölőszervezettel</h3>
+                <iframe title="2024-es önkormányzati választások győztes polgármestereinek pártállása" aria-label="Map" id="datawrapper-chart-9TUnn" src="https://datawrapper.dwcdn.net/9TUnn/9/" scrolling="no" frameborder="0" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                </script>
+            </article>
+        </section>
+    </main>
+
+
+    <footer>
+        <p><a href="https://njavor.com">njavor</a>, 2024</p>
+    </footer>
+</body>
+</html>

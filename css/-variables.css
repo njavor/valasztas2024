@@ -1,0 +1,56 @@
+:root{
+    /* COLORS */
+    --feher: #fff;
+    --fekete: #000;
+
+    --white: #f2f7f8;
+    --d-white: #dee4e6;
+    --black: #1b1b1b;
+    --l-black: #292929;
+    --gray: #7e7e7e;
+    --m-green: #53b9aa;
+    --green: #2ca08f;
+    --blue: #43a6be;
+    --red: #e7203b;
+
+    /* color scheme */
+    color-scheme: light dark;
+    --primary: var(--green);
+    --secondary: var(--red);
+    --bgColor: var(--white);
+    --textColor: var(--black);
+    --linkColor: var(--blue);
+    --scrollbarThumb: var(--d-white);
+
+    --v-eu: #003399;
+    --v-hu: #388d00;
+
+
+
+    /* FONTS */
+    --ff-heading: "Outfit", sans-serif;
+    --ff-content: "Outfit", sans-serif;
+
+    --fs-900: 72pt;
+    --fs-800: 36pt;
+    --fs-700: 32pt;
+    --fs-600: 26pt;
+    --fs-550: 24pt;
+    --fs-500: 18pt;
+    --fs-400: 14pt;
+    --fs-300: 12pt;
+    --fs-200: 9pt;
+
+
+
+    /* MARGINS,PADDINGS */
+    --pd-def: 10em;
+    --pd-def-m: 10%;
+    --pd-def-s: 5%;
+
+
+
+    /* TRANSITIONS */
+    --ts-def: .3s;
+    --ts-fast: .2s;
+}

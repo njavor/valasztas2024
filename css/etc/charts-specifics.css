@@ -1,0 +1,127 @@
+.charts-css{
+    --fidesz: #ff6b01;
+    --tisza: #ddf16a;
+    --dk: #0067ac;
+    --mszp: #ed1a3b;
+    --parbeszed: #6eda7a;
+    --mihazank: #688d1b;
+    --momentum: #7d6aa9;
+    --mkkp: #ec8b8b;
+    --jobbik: #089894;
+    --lmp: #4fb687;
+    --kettork: #f1db7b;
+    --mmn: #032d5d;
+    --memo: #de3229;
+    --munkaspart: #bf1619;
+    --szdsz: #2d8be4;
+
+    --vitezy: #b1d0ef;
+}
+
+
+
+
+#reszvetel{
+    & .charts-css td:hover{
+        background: var(--secondary) !important;
+        cursor: pointer;
+    }
+    & .charts-css:has(td.ora7:target) td.ora7{
+        background: var(--secondary) !important;
+    
+        & .tooltip{
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+    }
+    & .charts-css:has(td.ora9:active) td.ora9{
+        background: var(--secondary) !important;
+    
+        & .tooltip{
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+    }
+    & .charts-css:has(td.ora11:active) td.ora11{
+        background: var(--secondary) !important;
+    
+        & .tooltip{
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+    }
+    & .charts-css:has(td.ora13:active) td.ora13{
+        background: var(--secondary) !important;
+    
+        & .tooltip{
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+    }
+    & .charts-css:has(td.ora15:active) td.ora15{
+        background: var(--secondary) !important;
+    
+        & .tooltip{
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+    }
+    & .charts-css:has(td.ora17:active) td.ora17{
+        background: var(--secondary) !important;
+    
+        & .tooltip{
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+    }
+    & .charts-css:has(td.ora1830:active) td.ora1830{
+        background: var(--secondary) !important;
+    
+        & .tooltip{
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+    }
+    & .charts-css:has(td.ora19:active) td.ora19{
+        background: var(--secondary) !important;
+    
+        & .tooltip{
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+    }
+}
+
+
+
+#epszavazatok2024, #epszavazatok2019{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr fit-content(100%);
+
+    & .charts-css{
+        grid-row: 1;
+        grid-column: 1;
+
+        &.line{
+            opacity: .3;
+        }
+
+
+    }
+    & .source{
+        grid-row: 2;
+    }
+}
+
+
+#hu1{
+    & > article{
+        width: fit-content;
+    }
+
+    .charts-css.column{
+        height: calc(100% - 1.7em);
+        --labels-size: 2.7rem !important;
+    }
+}
