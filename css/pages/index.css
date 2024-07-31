@@ -47,13 +47,13 @@
     text-transform: uppercase;
     
     &.eu{
-        background: url(/img/eu.svg) center no-repeat #003399;
+        background: url(/valasztas2024/img/eu.svg) center no-repeat #003399;
         color: var(--white);
     }
     &.hu{
-        background: url(/img/hu.svg) ;
-        background-size: contain;
-        background-repeat: repeat-x;
+        background: url(/valasztas2024/img/hu.svg) ;
+        /* background-size: contain;
+        background-repeat: repeat-x; */
         color: var(--black);
     }
 }
