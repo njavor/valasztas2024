@@ -69,6 +69,8 @@ p{
     margin-bottom: 1em;
 }
 
+
+
 a{
     color: var(--linkColor);
     text-decoration: none;
@@ -78,4 +80,82 @@ a{
     &:hover{
         text-decoration: underline;
     }
+}
+
+button{
+    padding: 1em 1.5em;
+
+
+    font-family: var(--ff-content);
+    font-size: var(--fs-300);
+    font-weight: bold;
+    letter-spacing: 1pt;
+
+    border: none;
+    transition: var(--ts-fast);
+
+    &:hover{
+        cursor: pointer;
+    }
+    
+    &.theme--dark{
+        background: var(--black);
+        color: var(--white);
+    }
+    &.theme--light{
+        background: var(--white);
+        color: var(--black);
+    }
+    &.theme--primary{
+        background: linear-gradient(to top, var(--primary) 50%, var(--black) 50%) bottom;
+        background-size: 100% 200%;
+        color: var(--white);
+    }
+
+
+    &.animate--fade-in{
+        transition: var(--ts-def);
+        opacity: .8;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    &.animate--fade-out{
+        transition: var(--ts-def);
+        opacity: 1;
+        &:hover{
+            opacity: .8;
+        }
+    }
+
+
+    /* &.animation--delete{
+        position: relative;
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            left: calc(50% - 12px);
+            bottom: calc(50% - 26px);
+            
+            display: inline-block;
+
+    
+            padding: 25px 5px;
+            border-radius: 10px;
+    
+            background: inherit;
+            transition: var(--ts-def);
+        }
+        
+        &:hover{
+            &::before{
+                transform: rotate(45deg);
+                background: red;
+            }
+            &::after{
+                transform: rotate(-45deg);
+                background: red;
+            }
+        }
+    } */
 }

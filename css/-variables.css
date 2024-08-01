@@ -53,4 +53,5 @@
     /* TRANSITIONS */
     --ts-def: .3s;
     --ts-fast: .2s;
+    --ts-slow: .4s;
 }

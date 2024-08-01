@@ -48,6 +48,7 @@
     
     &.eu{
         background: url(/valasztas2024/img/eu.svg) center no-repeat #003399;
+        background: url(/img/eu.svg) center no-repeat #003399;
         color: var(--white);
     }
     &.hu{
@@ -55,5 +56,32 @@
         /* background-size: contain;
         background-repeat: repeat-x; */
         color: var(--black);
+    }
+}
+
+
+
+
+#openEPD{
+    display: none;
+
+    &.closed{
+        display: block;
+    }
+    &.open{
+        display: none;
+    }
+}
+#closeEPD{
+    &.closed{
+        display: none;
+    }
+    &.open{
+        display: block;
+    }
+}
+#eu-des-0, #eu-des-1, #eu-des-2{
+    &.closed{
+        display: none;
     }
 }

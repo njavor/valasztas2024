@@ -20,6 +20,7 @@
     <!-- js -->
      <script src="js/headerIn.js" defer></script>
      <script src="js/progressBar.js" defer></script>
+     <script src="js/epDescription.js" defer></script>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -315,13 +316,11 @@
                 <span class="source">
                     <span>Diagram: Jávor Nikolett</span>                    
                     &ensp;•&ensp;
-                    <span>Forrás: <a href="" target="_blank">Nemzeti Választási Iroda</a></span>
+                    <span>Forrás: <a href="https://www.valasztas.hu/home" target="_blank">Nemzeti Választási Iroda</a></span>
                     &ensp;•&ensp;
                     <a href="data/reszveteli_adatok_20004-2024.xlsx" download>Adatok letöltése</a>
                     &ensp;•&ensp;
                     <a href="" download>Kép letöltése</a>
-                    &ensp;•&ensp;
-                    <span>A készítéshez használt framework: <a href="https://chartscss.org" target="_blank">Charts.css</a></span>
                 </span>
             </article>
             <!-- <article id="reszvetel-terulet" class="chart multiple nobg">
@@ -333,18 +332,17 @@
 
         <section class="newphase eu">
             <h1>európai parlamenti választások</h1>
-            <button class="openex" style="display: none;">mi is ez?</button>
         </section>
-        <section class="introduction color-eu">
-            <h2>Kezdjük az elején... mi a fene az az Európai Parlament?</h2>
-            <button class="closeex">tudok mindent, nem kell a leírás</button>
+        <section class="color-eu" style="margin-top: -2em; padding-block: 0 1em;">
+            <button id="openEPD" class="theme--light animate--fade-out closed">mi is ez?</button>
+            <button id="closeEPD" class="theme--dark animate--fade-in closed">nem kell leírás</button>
         </section>
-        <section class="color-eu" style="position: relative;">
+        <section id="eu-des-1" class="color-eu closed" style="position: relative;">
             <article style="text-align: left; align-self: flex-start; width: 60%;">
                 <h3 class="title">Az EP</h3>
                 <div>
-                    <img style="position:absolute; bottom: 0; right: 0; height: 70%; width: 40vw; object-fit: cover; object-position: left;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg/1920px-European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg" alt="">
-                    <label for="img" style="position: absolute; bottom: 0; right: 40%; padding: .3em .4em .3em .7em;  font-size: var(--fs-200); opacity: .9;">kép forrása: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg/1920px-European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg" target="_blank">Wikipédia</a></label>
+                    <img style="position:absolute; bottom: 0; right: 0; height: 70%; width: 40%; object-fit: cover; object-position: left;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Europa_Parlament_1985.jpg/1280px-Europa_Parlament_1985.jpg" alt="">
+                    <label for="img" style="position: absolute; bottom: 0; right: 40%; padding: .3em .4em .3em .7em;  font-size: var(--fs-200); opacity: .9;">kép forrása: <a href="https://commons.wikimedia.org/wiki/File:Europa_Parlament_1985.jpg" target="_blank">Wikipédia</a></label>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
@@ -356,16 +354,21 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, ipsa labore quasi unde animi? Ad animi fugit exercitationem dolorum, vero, id sint dignissimos eius, numquam ipsum voluptate repudiandae quisquam.</p>
             </article>
         </section>
-        <section class="color-eu" style="position: relative;">
-            <article style="text-align: left; align-self: flex-end; width: 70%;">
+        <section id="eu-des-2" class="color-eu closed" style="position: relative;">
+            <article style="text-align: left; align-self: flex-end; width: 80%;">
                 <h3 class="title" style="margin-top: 4em;">Miről dönt a szavazatunk?</h3>
                 <div>
-                    <img style="position:absolute; top: 6em; left: 0; height: 70%; width: 30vw; object-fit: cover; object-position: right;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg/1920px-European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg" alt="">
-                    <label for="img" style="position: absolute; top: calc(9.5em + 70%); left: 0; padding: .3em .4em .3em .7em;  font-size: var(--fs-200); opacity: .9;">kép forrása: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg/1920px-European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg" target="_blank">Wikipédia</a></label>
+                    <img style="position:absolute; top: 5em; left: 0; height: 70%; width: 23%; object-fit: cover; object-position: right;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/European_Parliament_hemicycle.jpg/1280px-European_Parliament_hemicycle.jpg" alt="">
+                    <label for="img" style="position: absolute; top: calc(8em + 70%); left: 0; padding: .3em .4em .3em .7em;  font-size: var(--fs-200); opacity: .9;">kép forrása: <a href="https://commons.wikimedia.org/wiki/File:European_Parliament_hemicycle.jpg" target="_blank">Wikipédia</a></label>
                 </div>
                 <p>
-                    Az európai parlamenti választásokon, az Unió többi országához hasonlóan, Magyarországon is arról döntünk, hogy kik képkviseljék hazánkat az Európai Parlament ránkeső helyein. Ez 21 magyar helyet jelent.
+                    Az európai parlamenti választásokon, az Unió többi országához hasonlóan, Magyarországon is arról döntünk, hogy kik képkviseljék hazánkat az Európai Parlament ránkeső székeiben. Ez 21 magyar helyet jelent.
                 </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde reiciendis adipisci quae aliquam quibusdam dignissimos hic dolore optio sequi, numquam voluptate totam, voluptatum quos eos cumque consectetur libero dolorum.
+                </p>
+                <br>
+                <br>
                 <p>
                     Egy-egy mandátum elnyeréséhez nagyságrendileg 360-370 ezer szavazatra van szükség, feltéve, hogy minden választópolgár leadja a szavazatát. Persze ez a gyakorlatban sosem történik meg, így a mandátumszerzéshez kellő szavazatok száma is alacsonyabb a valóságban, de így is jelentős számokat igényel.
                 </p>
@@ -476,13 +479,11 @@
                 <span class="source">
                     <span>Diagram: Jávor Nikolett</span>                    
                     &ensp;•&ensp;
-                    <span>Forrás: <a href="" target="_blank">Nemzeti Választási Iroda</a></span>
+                    <span>Forrás: <a href="https://vtr.valasztas.hu/ep2024" target="_blank">Nemzeti Választási Iroda</a></span>
                     &ensp;•&ensp;
                     <a href="data/reszveteli_adatok_20004-2024.xlsx" download>Adatok letöltése</a>
                     &ensp;•&ensp;
                     <a href="" download>Kép letöltése</a>
-                    &ensp;•&ensp;
-                    <span>A készítéshez használt framework: <a href="https://chartscss.org" target="_blank">Charts.css</a></span>
                 </span>
             </article>
             
@@ -575,13 +576,11 @@
                 <span class="source">
                     <span>Diagram: Jávor Nikolett</span>                    
                     &ensp;•&ensp;
-                    <span>Forrás: <a href="" target="_blank">Nemzeti Választási Iroda</a></span>
+                    <span>Forrás: <a href="https://www.valasztas.hu/ep2019" target="_blank">Nemzeti Választási Iroda</a></span>
                     &ensp;•&ensp;
                     <a href="data/reszveteli_adatok_20004-2024.xlsx" download>Adatok letöltése</a>
                     &ensp;•&ensp;
                     <a href="" download>Kép letöltése</a>
-                    &ensp;•&ensp;
-                    <span>A készítéshez használt framework: <a href="https://chartscss.org" target="_blank">Charts.css</a></span>
                 </span>
             </article>
         </section>
@@ -597,13 +596,22 @@
                         <tr><td style="--start: calc(20 / 21); --end: calc(21 / 21);  --c: var(--jobbik);"><span class="data">1</span></td></tr>
                     </tbody>
                 </table>
-                <ul class="charts-css legend legend-square" style="position: absolute; top: 2%; right: 4%; height: fit-content; width: fit-content;   text-wrap: nowrap; border: none;">
+                <ul class="charts-css legend legend-square" style="position: absolute; top: 1%; right: 4%; height: fit-content; width: fit-content;   text-wrap: nowrap; border: none;">
                     <li style="--color-1: var(--fidesz);"> FIDESZ-KDNP </li>
                     <li style="--color-2: var(--dk)"> DK </li>
                     <li style="--color-3: var(--momentum)"> Momentum </li>
                     <li style="--color-4: var(--mszp)"> MSZP-P </li>
                     <li style="--color-5: var(--jobbik)"> Jobbik </li>
                 </ul>
+                <span class="source">
+                    <span>Diagram: Jávor Nikolett</span>                    
+                    &ensp;•&ensp;
+                    <span>Forrás: <a href="https://vtr.valasztas.hu/ep2019" target="_blank">Nemzeti Választási Iroda</a></span>
+                    &ensp;•&ensp;
+                    <a href="data/reszveteli_adatok_20004-2024.xlsx" download>Adatok letöltése</a>
+                    &ensp;•&ensp;
+                    <a href="" download>Kép letöltése</a>
+                </span>
             </article>
             <article id="epmandatumok2024" class="chart" style="position: relative;">
                 <table class="charts-css pie  show-heading show-labels hide-data  data-center data-spacing-15">
@@ -617,12 +625,21 @@
                         </tr>
                     </tbody>
                 </table>
-                <ul class="charts-css legend legend-square" style="position: absolute; top: 2%; right: 4%; height: fit-content; width: fit-content;   text-wrap: nowrap; border: none;">
+                <ul class="charts-css legend legend-square" style="position: absolute; top: 1%; right: 4%; height: fit-content; width: fit-content;   text-wrap: nowrap; border: none;">
                     <li style="--color-1: var(--fidesz);"> FIDESZ-KDNP </li>
                     <li style="--color-2: var(--tisza)"> TISZA </li>
                     <li style="--color-3: var(--dk)"> DK-MSZP-P </li>
                     <li style="--color-4: var(--mihazank)"> Mi Hazánk </li>
                 </ul>
+                <span class="source">
+                    <span>Diagram: Jávor Nikolett</span>                    
+                    &ensp;•&ensp;
+                    <span>Forrás: <a href="https://vtr.valasztas.hu/ep2024" target="_blank">Nemzeti Választási Iroda</a></span>
+                    &ensp;•&ensp;
+                    <a href="data/reszveteli_adatok_20004-2024.xlsx" download>Adatok letöltése</a>
+                    &ensp;•&ensp;
+                    <a href="" download>Kép letöltése</a>
+                </span>
             </article>
         </section>
         <section id="eu3">
@@ -678,13 +695,11 @@
                         <a href="data/" download>Adatok letöltése</a>
                         &ensp;•&ensp;
                         <a href="" download>Kép letöltése</a>
-                        &ensp;•&ensp;
-                        <span>A készítéshez használt framework: <a href="https://chartscss.org" target="_blank">Charts.css</a></span>
                     </span>
                 </article>
                 <article id="onkormanyzatFopolgarmesterKulonbseg" class="chart">
                     <table class="charts-css column  show-heading show-labels  show-primary-axis show-3-secondary-axes  data-outside data-spacing-15">
-                        <caption>Szavazatkülönbség a győztes (főpolgármester) és a második helyezett között (2002-2024)</caption>
+                        <caption>Főpolgármester választás szavazatkülönbsége a győztes és a második között (2002-2024)</caption>
                         <tbody>
                             <tr>
                                 <th>2002</th>
@@ -730,6 +745,15 @@
                             </tr>
                         </tbody>
                     </table>
+                    <span class="source">
+                        <span>Diagram: Jávor Nikolett</span>                    
+                        &ensp;•&ensp;
+                        <span>Forrás: <a href="https://www.valasztas.hu/home" target="_blank">Nemzeti Választási Iroda</a></span>
+                        &ensp;•&ensp;
+                        <a href="data/" download>Adatok letöltése</a>
+                        &ensp;•&ensp;
+                        <a href="" download>Kép letöltése</a>
+                    </span>
                 </article>
             </div>
 
